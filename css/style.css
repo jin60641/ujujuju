@@ -1,0 +1,42 @@
+body {
+    position: fixed; 
+    overflow-y: hidden; 
+    overflow-x: hidden;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+@font-face{
+    font-family:'Arcade+';
+    font-style:normal;
+    font-weight:400;
+    src: url('./../fonts/arcade-n.woff');
+}
+
+@font-face{
+    font-family:'Arcade';
+    font-style:normal;
+    font-weight:400;
+    src: url('./../fonts/Arcade.woff');
+}
+
+@font-face{
+    font-family:'Morith';
+    font-style:normal;
+    font-weight:400;
+    src: url('./../fonts/morith.eot');
+}
+
+
+#titlebar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 32px;
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+
