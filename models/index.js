@@ -1,32 +1,9 @@
 const path = require("path");
 const Sequelize = require("sequelize");
 const fs = require('fs-extra');
+const config = require('../config.js');
 
-const settings = {
-	pool : {
-		max : 100,
-		min : 0,
-		acquire : 30000,
-		idle: 10000
-	},
-	password : "dnfjddlE2@",
-	//host : 'root',
-	port : 3306,
-	database : "ujujuju",
-	dialect : "mysql",
-	username : "root",
-	define: {
-		charset: 'utf8',
-		dialectOptions: {
-			collate: 'utf8_general_ci'
-		},
-	},
-	query : {
-	}
-}
-
-
-const sequelize = new Sequelize(settings.database, settings.username, settings.password, settings);
+const sequelize = new Sequelize(config.database, config.username, config.password, config);
 const db = {};
 
 fs
