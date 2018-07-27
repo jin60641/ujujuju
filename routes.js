@@ -4,7 +4,7 @@ var express = require('express');
 var router = express.Router();
 const db = require('./models/index.js');
 
-router.get('/donwload',(req,res)=>{
+router.get('/download',(req,res)=>{
 	res.redirect('https://drive.google.com/open?id=0Bz_eEQoJXtIULUs1SkVOUENZU00');
 });
 router.post('/game_rank',function(req,res){
