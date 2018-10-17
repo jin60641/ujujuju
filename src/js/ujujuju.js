@@ -577,7 +577,7 @@ function Render(){
 					Context.drawImage(Story,226,321);
 				}
 				Context.drawImage(Challenge2,238,388);
-				Context.drawImage(Ranking2,235,435);
+				//Context.drawImage(Ranking2,235,435);
 			}
 			else if(MainMouseX >= 238 && MainMouseX<= 370 && MainMouseY >= 388 && MainMouseY <= 418)
 			{
@@ -590,17 +590,17 @@ function Render(){
 					Context.drawImage(Challenge,238,368);
 				}
 				Context.drawImage(Story2,238,340);
-				Context.drawImage(Ranking2,235,435);
+				//Context.drawImage(Ranking2,235,435);
 			}
 			else if(MainMouseX >= 275 && MainMouseX <= 327 && MainMouseY>=435 && MainMouseY <= 465)
 			{
 				if(bMouseClicked)
 				{
-				Context.drawImage(RankingClicked,208,413); 
+				  //Context.drawImage(RankingClicked,208,413); 
 				}
 				else
 				{
-					Context.drawImage(Ranking,215,416);
+					//Context.drawImage(Ranking,215,416);
 				}
 				Context.drawImage(Story2,238,340)
 				Context.drawImage(Challenge2,238,388)
@@ -609,7 +609,7 @@ function Render(){
 			{
 				Context.drawImage(Story2,238,340);
 				Context.drawImage(Challenge2,238,388)
-				Context.drawImage(Ranking2,235,435);
+				//Context.drawImage(Ranking2,235,435);
 			}
 		}
 	}

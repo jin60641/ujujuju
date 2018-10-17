@@ -2,6 +2,7 @@
 
 var express = require('express');
 var router = express.Router();
+let path = require('path');
 const db = require('./models/index.js');
 
 router.get('/download',(req,res)=>{
@@ -23,6 +24,9 @@ router.get('/game_getrank',function(req,res){
 	});
 });
 
-var serveStatic = require('serve-static')
-router.use(serveStatic(__dirname))
+router.use(express.static(path.resolve(__dirname,'..','src')));
+router.get('*',(req,res)=>{
+  res.sendFile(path.resolve(__dirname,'..','src','index.html'));
+});
+
 module.exports = router;
