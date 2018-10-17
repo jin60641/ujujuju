@@ -1,0 +1,10 @@
+{
+  "port": 9424,
+  "logLevel": "trace",
+  "noClipboard": true,
+  "hot": true,
+  "inline": true,
+  "content": [
+    './src'
+  ]
+}
